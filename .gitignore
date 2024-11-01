@@ -1,3 +1,23 @@
+# My setting
+.vscode
+*.DS_Store
+cheatsheet
+
+# Folder for training results and logs
+results/
+results_server/
+userdata
+wandb/
+trained_models/
+
+# Large files or folders
+path_generation/
+
+
+
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

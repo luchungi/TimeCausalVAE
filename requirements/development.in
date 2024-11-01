@@ -1,0 +1,17 @@
+# train
+torch
+ml-collections
+wandb
+tqdm
+
+# others
+numpy 
+pot
+statsmodels
+seaborn
+scikit-learn
+
+jupyter
+notebook
+
+neuralhedge

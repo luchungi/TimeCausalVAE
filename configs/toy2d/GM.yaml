@@ -1,0 +1,62 @@
+model: BetaCVAE
+encoder: CMLP
+conditioner: Id
+decoder: CMLP
+prior: RealNVP
+discriminator: 
+dataset: GM
+
+n_timestep: 1
+n_sample: 8000
+
+data_dim: 2
+data_length: 1
+latent_dim: 2
+latent_length: 1
+condition_dim: 1
+
+#hyperparameters:  
+optimizer: Adam
+lr : 0.001
+train_batch_size: 512
+eval_batch_size: 512
+epochs: 100
+wandb: false
+seed: 0
+steps_predict: 20
+steps_saving: 20
+
+# algo
+beta: 0.01
+
+# transform:
+transform: id
+inv_transform: id
+
+#conditioner hyperparameter:
+C_input_dim: 0
+C_hidden_dim: 0
+C_num_layers: 0
+C_output_dim: 0
+
+#encoder hyperparameter:
+E_input_dim: 2
+E_hidden_dim: 64
+E_num_layers: 2
+E_output_dim: 2
+
+#generator hyperparameter:
+D_input_dim: 2
+D_hidden_dim: 64
+D_num_layers: 2
+D_output_dim: 2
+
+#prior hyperparameter:
+P_latent_dim: # leave this blank
+P_num_flows: 3
+P_hidden_dim: 16
+
+device_name:
+comment: 
+
+ploter: 2d

@@ -1,0 +1,63 @@
+# gan model, PathChar_GAN,RPathChar_GAN,RCGAN, COTGAN,TimeGAN 
+model: InfoCVAE
+encoder: CLSTMRes
+conditioner: Id
+decoder: CLSTMRes
+prior: RealNVP
+discriminator: 
+dataset: Hestonprice
+
+n_timestep: 60
+n_sample: 2560
+
+data_dim: 1
+data_length: 60
+latent_dim: 2
+latent_length: 60
+condition_dim: 1
+
+#hyperparameters:  
+optimizer: Adam
+lr : 0.001
+train_batch_size: 256
+eval_batch_size: 256
+epochs: 500
+wandb: true
+seed: 0
+steps_predict: 20
+steps_saving: 20
+
+# algo
+beta: 0.04
+alpha: 0.04
+
+# transform:
+transform: log
+inv_transform: exp
+
+#conditioner hyperparameter:
+C_input_dim: 0
+C_hidden_dim: 0
+C_num_layers: 0
+C_output_dim: 0
+
+#encoder hyperparameter:
+E_input_dim: 1
+E_hidden_dim: 16
+E_num_layers: 2
+E_output_dim: 2
+
+#generator hyperparameter:
+D_input_dim: 2
+D_hidden_dim: 16
+D_num_layers: 2
+D_output_dim: 1
+
+#prior hyperparameter:
+P_latent_dim: 
+P_num_flows: 3
+P_hidden_dim: 250
+
+device_name:
+
+comment: 
