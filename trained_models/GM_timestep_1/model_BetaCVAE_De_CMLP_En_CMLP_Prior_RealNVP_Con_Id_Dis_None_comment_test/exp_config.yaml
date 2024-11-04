@@ -1,0 +1,51 @@
+!!python/object:ml_collections.config_dict.config_dict.ConfigDict
+_convert_dict: true
+_fields:
+  C_hidden_dim: 0
+  C_input_dim: 0
+  C_num_layers: 0
+  C_output_dim: 0
+  D_hidden_dim: 64
+  D_input_dim: 2
+  D_num_layers: 2
+  D_output_dim: 2
+  E_hidden_dim: 64
+  E_input_dim: 2
+  E_num_layers: 2
+  E_output_dim: 2
+  P_hidden_dim: 16
+  P_latent_dim: null
+  P_num_flows: 3
+  base_output_dir: ..
+  beta: 0.6
+  comment: test
+  condition_dim: 1
+  conditioner: Id
+  data_dim: 2
+  data_length: 1
+  dataset: GM
+  decoder: CMLP
+  device_name: null
+  discriminator: null
+  encoder: CMLP
+  epochs: 500
+  eval_batch_size: 512
+  inv_transform: id
+  latent_dim: 2
+  latent_length: 1
+  lr: 0.001
+  model: BetaCVAE
+  n_sample: 8000
+  n_timestep: 1
+  optimizer: Adam
+  output_dir: ../results/GM_timestep_1/model_BetaCVAE_De_CMLP_En_CMLP_Prior_RealNVP_Con_Id_Dis_None_comment_test
+  ploter: 2d
+  prior: RealNVP
+  seed: 0
+  steps_predict: 20
+  steps_saving: 20
+  train_batch_size: 512
+  transform: id
+  wandb: true
+_locked: false
+_type_safe: true

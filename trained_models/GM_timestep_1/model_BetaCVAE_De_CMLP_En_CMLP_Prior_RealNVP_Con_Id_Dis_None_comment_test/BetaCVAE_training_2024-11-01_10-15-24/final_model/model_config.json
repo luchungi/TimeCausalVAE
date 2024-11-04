@@ -1,0 +1,1 @@
+{"name": "BetaVAEConfig", "data_dim": 2, "data_length": 1, "latent_length": 1, "latent_dim": 2, "reconstruction_loss": "l1", "transform": "id", "inv_transform": "id", "uses_default_encoder": false, "uses_default_decoder": false, "beta": 0.6}

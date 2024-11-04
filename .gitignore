@@ -8,10 +8,12 @@ results/
 results_server/
 userdata
 wandb/
-trained_models/
+
 
 # Large files or folders
 path_generation/
+**/conditional_paths_dict*
+conditional_paths_dict.pkl
 
 
 

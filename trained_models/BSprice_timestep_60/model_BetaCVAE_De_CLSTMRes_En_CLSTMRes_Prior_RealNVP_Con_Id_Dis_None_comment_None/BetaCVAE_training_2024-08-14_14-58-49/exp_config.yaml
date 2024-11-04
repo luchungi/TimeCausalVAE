@@ -1,0 +1,49 @@
+!!python/object:ml_collections.config_dict.config_dict.ConfigDict
+_convert_dict: true
+_fields:
+  C_hidden_dim: 0
+  C_input_dim: 0
+  C_num_layers: 0
+  C_output_dim: 0
+  D_hidden_dim: 16
+  D_input_dim: 2
+  D_num_layers: 2
+  D_output_dim: 1
+  E_hidden_dim: 16
+  E_input_dim: 1
+  E_num_layers: 2
+  E_output_dim: 2
+  P_hidden_dim: 250
+  P_latent_dim: null
+  P_num_flows: 3
+  base_output_dir: /u/hous/tc-vae
+  beta: 0.08
+  comment: null
+  condition_dim: 1
+  conditioner: Id
+  data_dim: 1
+  data_length: 60
+  dataset: BSprice
+  decoder: CLSTMRes
+  discriminator: null
+  encoder: CLSTMRes
+  epochs: 200
+  eval_batch_size: 256
+  inv_transform: exp
+  latent_dim: 2
+  latent_length: 60
+  lr: 1e-3
+  model: BetaCVAE
+  n_sample: 2560
+  n_timestep: 60
+  optimizer: Adam
+  output_dir: /u/hous/tc-vae/results/BSprice_timestep_60/model_BetaCVAE_De_CLSTMRes_En_CLSTMRes_Prior_RealNVP_Con_Id_Dis_None_comment_None
+  prior: RealNVP
+  seed: 0
+  steps_predict: 20
+  steps_saving: 20
+  train_batch_size: 256
+  transform: log
+  wandb: true
+_locked: false
+_type_safe: true
