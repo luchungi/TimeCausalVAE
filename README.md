@@ -25,7 +25,7 @@ You can find the evaluation of trained models in the notebooks:
 - [S&P500 and VIX](https://github.com/justinhou95/TimeCausalVAE/blob/main/notebooks/SP500.ipynb)
 - [Toy 2d examples](https://github.com/justinhou95/TimeCausalVAE/blob/main/notebooks/2Dtoydistributions.ipynb)
   
-The trained models weights and training configurations are save in [/trained_models](https://github.com/justinhou95/TimeCausalVAE/tree/main/trained_models)
+The trained models weights and training configurations are save in [trained_models](https://github.com/justinhou95/TimeCausalVAE/tree/main/trained_models)
 
 
 ![Image](https://github.com/justinhou95/TimeCausalVAE/blob/main/trained_models/Hestonprice_timestep_60/model_InfoCVAE_De_CLSTMRes_En_CLSTMRes_Prior_RealNVP_Con_Id_Dis_None_comment_None/InfoCVAE_training_2024-09-16_18-19-18/prices_real_fake.png)
