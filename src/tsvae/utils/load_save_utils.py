@@ -31,9 +31,10 @@ def load_obj(filepath):
         loader = pickle.load
     elif filepath.endswith("pt"):
         loader = torch.load
+        with open(filepath, "rb") as f:
+            return torch.load(f,weights_only=True)
     elif filepath.endswith("json"):
         import json
-
         loader = json.load
     elif filepath.endswith("npy"):
         return np.load(filepath)
