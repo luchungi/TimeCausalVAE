@@ -63,7 +63,7 @@ class BaseModel(Module):
         path_to_model_weights = os.path.join(dir_path, "model.pt")
 
         try:
-            model_weights = torch.load(path_to_model_weights, map_location="cpu")
+            model_weights = torch.load(path_to_model_weights, map_location="cpu",weights_only=True)
 
         except RuntimeError:
             RuntimeError("Enable to load model weights. Ensure they are saves in a '.pt' format.")
