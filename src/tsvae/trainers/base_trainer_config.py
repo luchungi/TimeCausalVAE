@@ -10,7 +10,8 @@ from tsvae.base import BaseConfig
 @dataclass
 class BaseTrainerConfigPythae(BaseConfig):
     """
-    This class is from pythae!
+    This class I copy from pythae!
+    "https://github.com/clementchadebec/benchmark_VAE"
 
     BaseTrainer config class stating the main training arguments.
 

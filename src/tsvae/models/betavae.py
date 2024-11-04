@@ -1,14 +1,10 @@
 from dataclasses import dataclass
-from typing import Optional, Dict
+from typing import Dict, Optional
 
-import torch
 from torch import Tensor
 
-from tsvae.dataset.base import DatasetOutput
-from tsvae.models.utils.output import ModelOutput
 from tsvae.models.decoder.base_decoder import BaseDecoder
 from tsvae.models.encoder.base_encoder import BaseEncoder
-
 from tsvae.models.prior.base_prior import BasePrior
 from tsvae.models.prior.gaussian import entropy_normal
 from tsvae.models.vae import CVAE, VAE, CVAEConfig, VAEConfig

@@ -3,12 +3,11 @@ from typing import Optional
 
 from torch import Tensor
 
-from tsvae.models.utils.distances import GaussianMMD2
-
 from tsvae.models.decoder.base_decoder import BaseDecoder
 from tsvae.models.encoder.base_encoder import BaseEncoder
 from tsvae.models.prior.base_prior import BasePrior
 from tsvae.models.prior.gaussian import entropy_normal
+from tsvae.models.utils.distances import GaussianMMD2
 from tsvae.models.vae import CVAE, VAE, CVAEConfig, VAEConfig
 
 

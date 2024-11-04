@@ -1,4 +1,5 @@
 from torch import relu
+
 from tsvae.base import BasePipeline
 from tsvae.models.conditioner.id_conditioner import IdentityConditioner
 from tsvae.models.decoder.mlp_decoder import IdDecoder
@@ -6,7 +7,6 @@ from tsvae.models.decoder.neuralsde_decoder import CRSigDecoder
 from tsvae.models.encoder.mlp_encoder import IdEncoder
 from tsvae.models.prior.gaussian import GaussianPrior
 from tsvae.models.prior.realnvp import FlowPrior
-
 from tsvae.utils.logger_utils import get_console_logger
 
 logger = get_console_logger(__name__)
@@ -97,19 +97,6 @@ class NetworkPipeline(BasePipeline):
                 conditioner,
             )
 
-        elif exp_config.encoder == "CLogLSTMResEncoder":
-            from tsvae.models.encoder.lstm_encoder import CLogLSTMResEncoder
-
-            encoder = CLogLSTMResEncoder(
-                exp_config.data_dim + exp_config.condition_dim,
-                exp_config.data_length,
-                exp_config.latent_dim,
-                exp_config.latent_length,
-                exp_config.E_hidden_dim,
-                exp_config.E_num_layers,
-                exp_config.condition_dim,
-                conditioner,
-            )
         elif exp_config.encoder == "IdEncoder":
             encoder = IdEncoder()
         else:

@@ -47,8 +47,8 @@ class TrainingPipeline(BasePipeline):
                 exp_config=self.exp_config,
                 training_config=self.training_config,  # training config
                 model_config=self.model.model_config,  # model config
-                project_name="tsvae_project",  # specify your wandb project
-                entity_name="justinhou",  # specify your wandb entity
+                project_name="time-causal-vae",  # specify your wandb project
+                entity_name="my_wandb_entity",  # specify your wandb entity  
             )
             callbacks.append(wandb_cb)  # Add it to the callbacks list
         else:

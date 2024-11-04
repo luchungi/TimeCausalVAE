@@ -1,4 +1,7 @@
-"""Training Callbacks for training monitoring integrated in `pythae` (inspired from 
+"""
+Training Callbacks modified from `pythae`
+"https://github.com/clementchadebec/benchmark_VAE"
+Training Callbacks for training monitoring integrated in `pythae` (inspired from 
 https://github.com/huggingface/transformers/blob/master/src/transformers/trainer_callback.py)"""
 
 import importlib
@@ -385,7 +388,6 @@ class WandbCallback(TrainingCallback):  # pragma: no cover
     def on_prediction_step(self, training_config: BaseTrainerConfig, **kwargs):
         fig = kwargs.pop('fig', None)
         self._wandb.log({"plot": self._wandb.Image(fig)})
-        plt.close(fig)
 
     def on_train_end(self, training_config: BaseTrainerConfig, **kwargs):
         self.run.finish()

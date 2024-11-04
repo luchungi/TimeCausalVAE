@@ -31,10 +31,6 @@ class VAEConfig(BaseConfig):
 
 
 class VAE(BaseModel):
-    r"""
-    What is important is that is communicate with trainer. So it need to output a loss and able to set to a device. The loss is computed in the forward method, which returns loss_dict and data_dict. transform integrate domain knowledge how we should embed the data
-    Beyond this, all is for computing the loss
-    """
 
     model_config: VAEConfig
 

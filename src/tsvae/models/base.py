@@ -11,9 +11,9 @@ from tsvae.models.utils.output import ModelOutput
 
 
 class BaseModel(Module):
-    # What is important is that is communicate with trainer. So it need to output a loss and able to set to a device.
-    # Beyond this, all is for computing the loss
-    # TODO: Simplified save and load by just saving self.state_dict() instead of a model_dict with the key "model_state_dict"
+    r"""
+    What is important is that is communicating with trainer. Forward get data from trainer and output a dict which contains loss. The loss will be used in optimizer in the trainer.
+    """
     model_config: BaseConfig
 
     def __init__(self, model_config: BaseConfig):
@@ -24,11 +24,12 @@ class BaseModel(Module):
 
     def forward(self, inputs: DatasetOutput, **kwargs) -> ModelOutput:
         r"""
-        This is for typing check to to define it here
+        By using the forward of nn.Module we leverage their error instead of NotImplementedError
         """
         return super().forward()
+    
 
-    def generation(self, n_sample: int, **kwargs):
+    def generation(self, n_sample: int, device, **kwargs):
         raise NotImplementedError()
 
     def load_from_folder(self, dir_path):

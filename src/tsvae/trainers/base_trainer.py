@@ -30,7 +30,11 @@ logger = get_console_logger(__name__)
 
 
 class BaseTrainer:
-    """Base class to perform model training.
+    r"""
+    This class is also from pythae with some modification to time series
+    "https://github.com/clementchadebec/benchmark_VAE"
+
+    Base class to perform model training.
 
     Args:
         model (BaseModel): A instance of :class:`~tsvae.models.base.BaseModel` to train
@@ -449,6 +453,7 @@ class BaseTrainer:
                     fig=fig,
                     global_step=epoch,
                 )
+                plt.close(fig)
 
             self.callback_handler.on_epoch_end(training_config=self.training_config)
 
@@ -647,8 +652,13 @@ class BaseTrainer:
         # save training config
         self.training_config.save_json(checkpoint_dir, "training_config")
 
-    # Prediction is without prior
+        # save visualization
+        fig = self.predict(model)
+        plt.savefig(os.path.join(checkpoint_dir, "real_recon_fake.png"))
+        plt.close()
+
     def predict(self, model: BaseModel):
+        # compare real recon fake
 
         model.eval()
 
