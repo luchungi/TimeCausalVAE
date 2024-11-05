@@ -31,8 +31,8 @@ The trained models weights and training configurations are save in [trained_mode
 ![Image](https://github.com/justinhou95/TimeCausalVAE/blob/main/trained_models/Hestonprice_timestep_60/model_InfoCVAE_De_CLSTMRes_En_CLSTMRes_Prior_RealNVP_Con_Id_Dis_None_comment_None/InfoCVAE_training_2024-09-16_18-19-18/prices_real_fake.png)
 
 
-## Contact 😄
-If you have any questions, please feel free to reach me out 
+## Contact
+If you have any questions, please feel free to reach me out!
 
 
 
