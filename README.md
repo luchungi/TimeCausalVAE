@@ -1,5 +1,5 @@
 # Time-Causal VAE ⏱
-The official code repository for paper [Time-Causal VAE: Robust Financial Time Series Generator](https://justinhou95.github.io/).
+The official code repository for paper [Time-Causal VAE: Robust Financial Time Series Generator](https://arxiv.org/abs/2411.02947).
 
 ## Environments 🔩
 * Python 3.11 and PyTorch 2.5
