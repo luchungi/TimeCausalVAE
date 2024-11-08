@@ -32,12 +32,12 @@ The trained models weights and training configurations are save in [trained_mode
 
 
 ## Reference 
-- For log-utility maximization, mean-variance portfolio problem, we use the [NeuralHedge](https://github.com/justinhou95/NeuralHedge)
-- For optimal stopping evaluation, we modify the codes from [https://github.com/HeKrRuTe/OptStopRandNN](https://github.com/HeKrRuTe/OptStopRandNN)
-- For adapted Wasserstein distance estimation, we mofify the codes from [https://github.com/stephaneckstein/aotnumerics](https://github.com/stephaneckstein/aotnumerics)
-- For implementing NDB, we use the codes from [https://github.com/eitanrich/gans-n-gmms](https://github.com/eitanrich/gans-n-gmms)
-- For estimating Signature MMD, we modify the codes from [https://github.com/luchungi/Generative-Model-Signature-MMD](https://github.com/luchungi/Generative-Model-Signature-MMD)
-- The trainer class is inspired by the structure and codes from [pythae](https://github.com/clementchadebec/benchmark_VAE/tree/main) and [transformers](https://github.com/huggingface/transformers)  
+- [NeuralHedge](https://github.com/justinhou95/NeuralHedge) for log-utility maximization and mean-variance portfolio problem.
+- [https://github.com/HeKrRuTe/OptStopRandNN](https://github.com/HeKrRuTe/OptStopRandNN) for optimal stopping evaluation.
+- [https://github.com/stephaneckstein/aotnumerics](https://github.com/stephaneckstein/aotnumerics) for adapted Wasserstein distance estimation
+- [https://github.com/eitanrich/gans-n-gmms](https://github.com/eitanrich/gans-n-gmms) for NDB analysis
+- [https://github.com/luchungi/Generative-Model-Signature-MMD](https://github.com/luchungi/Generative-Model-Signature-MMD) for estimating Signature MMD
+- [pythae](https://github.com/clementchadebec/benchmark_VAE/tree/main) and [transformers](https://github.com/huggingface/transformers) for the trainer and callbacks.
 
 ## Contact
 If you have any questions, please feel free to reach me out!
