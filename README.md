@@ -31,6 +31,14 @@ The trained models weights and training configurations are save in [trained_mode
 ![Image](https://github.com/justinhou95/TimeCausalVAE/blob/main/trained_models/Hestonprice_timestep_60/model_InfoCVAE_De_CLSTMRes_En_CLSTMRes_Prior_RealNVP_Con_Id_Dis_None_comment_None/InfoCVAE_training_2024-09-16_18-19-18/prices_real_fake.png)
 
 
+## Reference 
+- For log-utility maximization, mean-variance portfolio problem, we use the [NeuralHedge](https://github.com/justinhou95/NeuralHedge)
+- For optimal stopping evaluation, we modify the codes from [https://github.com/HeKrRuTe/OptStopRandNN](https://github.com/HeKrRuTe/OptStopRandNN)
+- For adapted Wasserstein distance estimation, we mofify the codes from [https://github.com/stephaneckstein/aotnumerics](https://github.com/stephaneckstein/aotnumerics)
+- For implementing NDB, we use the codes from [https://github.com/eitanrich/gans-n-gmms](https://github.com/eitanrich/gans-n-gmms)
+- For estimating Signature MMD, we modify the codes from [https://github.com/luchungi/Generative-Model-Signature-MMD](https://github.com/luchungi/Generative-Model-Signature-MMD)
+- The trainer class is inspired by the structure and codes from [pythae](https://github.com/clementchadebec/benchmark_VAE/tree/main) and [transformers](https://github.com/huggingface/transformers)  
+
 ## Contact
 If you have any questions, please feel free to reach me out!
 
