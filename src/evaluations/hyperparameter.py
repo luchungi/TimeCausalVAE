@@ -84,7 +84,7 @@ class ModelEvaluator:
         with open(self.exp_config_path) as file:
             exp_config = yaml.load(file, Loader=yaml.UnsafeLoader)
         # we need this to load custom data
-        exp_config.base_data_dir = base_data_dir
+        # exp_config.base_data_dir = base_data_dir
         return exp_config
 
     def load_model(self):

@@ -118,6 +118,7 @@ def compute_eval_awd_dist_uncon(
 ):
     sawd = SAWD(n_compute_awd=n_compute_awd, n_slices=n_slices, len_slices=len_slices)
 
+    # file_path = './'
     file_path = pt.join(output_dir, f"sawd_{n_seed}_{n_compute_awd}_{n_slices}_{len_slices}.pkl")
     try:
         sawd_dist_dict = load_obj(file_path)

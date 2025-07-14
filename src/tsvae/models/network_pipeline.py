@@ -28,6 +28,7 @@ class NetworkPipeline(BasePipeline):
         return model
 
     def _get_conditioner(self, exp_config, **kwargs):
+        print(exp_config)
         if exp_config.conditioner == "Id":
             conditioner = IdentityConditioner()
         else:
